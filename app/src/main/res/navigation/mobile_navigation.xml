@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    >
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mad_project.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_user_post_show"
+        android:name="com.example.mad_project.ui.user_announcement.announcement_fragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_announcement_fragment" />
+    <fragment
+        android:id="@+id/nav_election_result"
+        android:name="com.example.mad_project.ui.election_result.election_result_show_frag"
+        android:label="Election Result"
+        tools:layout="@layout/fragment_election_result_show_frag" />
+
+    <fragment
+        android:id="@+id/nav_register_candidate_for_ele"
+        android:name="com.example.mad_project.ui.faculty_access.register_candi_form"
+        android:label="Register As Candidate"
+        tools:layout="@layout/fragment_register_candi_form" />
+
+    <fragment
+        android:id="@+id/nav_faculty_acces"
+        android:name="com.example.mad_project.ui.faculty_access.register_candi_faculty_access"
+        android:label="Register Candidate"
+        tools:layout="@layout/fragment_register_candi_faculty_access" />
+
+    <fragment
+        android:id="@+id/nav_election_candidate"
+        android:name="com.example.mad_project.ui.live_voting.election_candidate"
+        android:label="Candidate For Election"
+        tools:layout="@layout/fragment_election_candidate" />
+
+    <fragment
+        android:id="@+id/nav_faculty_acces_register_candi"
+        android:name="com.example.mad_project.ui.faculty_access.candi_detail_faculty_acc"
+        android:label="Candidate Details"
+        tools:layout="@layout/fragment_candi_detail_faculty_acc" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_send_email"
+        android:name="com.example.mad_project.ui.faculty_access.update_candi_via_email"
+        android:label="Send Email"
+        tools:layout="@layout/fragment_update_candi_via_email" />
+
+</navigation>
